@@ -5,3 +5,4 @@ Chaosdorf.
 
 * [Logos](logos/README.md)
 * [Colors](colors/README.md)
+* [Typography](typography/README.md)
