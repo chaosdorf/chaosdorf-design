@@ -1,0 +1,12 @@
+name: 'Woff2 Action'
+description: 'Convert and process fonts into woff2'
+inputs:
+  run:
+    description: 'What commands to run'
+    required: true
+    default: 'woff2_compress'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.run }}

@@ -26,3 +26,6 @@ ehthumbs_vista.db
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
+### Build Artifacts ###
+/assets/

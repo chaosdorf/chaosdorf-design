@@ -1,0 +1,35 @@
+name: Asset Generation
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: "./.github/actions/rsync"
+        with:
+          run: |
+            mkdir assets
+            rsync -avm \
+              --include='*.svg' --include="*.ttf" --include="*.otf" \
+              --exclude=".previews" -f 'hide,! */' . assets/
+      - uses: "./.github/actions/inkscape"
+        with:
+          run: |
+            find assets/logos -name *.svg -exec inkscape --export-type=pdf --export-area-page {} \;
+            find assets/logos -name *.svg -exec inkscape --export-type=eps --export-area-page {} \;
+            find assets/logos -name *.svg -exec inkscape --export-type=png --export-area-page --export-width=1024 {} \;
+      - uses: "./.github/actions/woff2"
+        with:
+          run: |
+            find assets/typography -name *.ttf -exec woff2_compress {} \;
+            find assets/typography -name *.otf -exec woff2_compress {} \;
+      - run: |
+          cd assets && zip -r9 ../assets.zip .
+      - name: Publish artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: assets
+          path: assets.zip

@@ -1,0 +1,12 @@
+name: 'Rsync Action'
+description: 'Copy and sync files with rsync'
+inputs:
+  run:
+    description: 'What commands to run'
+    required: true
+    default: 'rsync --version'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.run }}
