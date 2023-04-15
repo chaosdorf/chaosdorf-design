@@ -26,10 +26,9 @@ jobs:
           run: |
             find assets/typography -name *.ttf -exec woff2_compress {} \;
             find assets/typography -name *.otf -exec woff2_compress {} \;
-      - run: |
-          cd assets && zip -r9 ../assets.zip .
       - name: Publish artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: assets
-          path: assets.zip
+          name: chaosdorf-design.zip
+          path: chaosdorf-design
+          retention-days: 1
