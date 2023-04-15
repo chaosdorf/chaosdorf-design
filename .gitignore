@@ -1,0 +1,28 @@
+### Linux ###
+*~
+.directory
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+### Editors ###
+/.vscode/
+/.history/
+/.idea/
+*.iws
+*.iml
+*.bak
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
