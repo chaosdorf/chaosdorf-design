@@ -5,10 +5,13 @@
 This logo is based on the Chaosknoten combined with the name written in
 Computerfont.
 
-The main, colorful logo is primarily designed for use on stickers and the web.
-It should not be used in regular print or on streams.
+The main full-color logo is should be used with caution as it calls for 
+attention. It should not be used in print or for broadcast graphics.
 
-<img alt="Preview" src="logo-color.svg" height="96px">
+A sticker version is available as well.
+
+<img alt="Preview" src="logo-color.svg" height="96px">&nbsp;
+<img alt="Preview" src="logo-sticker.svg" height="96px">&nbsp;
 
 The monochrome logos are designed for use in print, laser-cut acrylic or as
 watermarks on streams.
