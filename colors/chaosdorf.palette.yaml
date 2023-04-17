@@ -1,0 +1,21 @@
+name: Chaosdorf
+groups:
+  - name: "Gradient"
+    swatches:
+      - name: "Gradient-0%"
+        rgb: [ 0, 255, 0 ]
+      - name: "Gradient-94%"
+        rgb: [ 0, 175, 0 ]
+      - name: "Gradient-98%"
+        rgb: [ 0, 128, 0 ]
+swatches:
+  - name: "Pure Hacker Green"
+    rgb: [ 0, 255, 0 ]
+  - name: "Muted Hacker Green"
+    rgb: [ 0, 195, 0 ]
+  - name: "White"
+    rgb: [ 255, 255, 255 ]
+  - name: "Pure Black"
+    rgb: [ 0, 0, 0 ]
+  - name: "Muted Black"
+    rgb: [ 23, 23, 23 ]

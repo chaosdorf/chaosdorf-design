@@ -1,0 +1,12 @@
+name: 'Palette Generation'
+description: 'Generates color palettes from a common source format'
+inputs:
+  run:
+    description: 'What commands to run'
+    required: true
+    default: 'python3 /generate.py'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.run }}

@@ -13,8 +13,12 @@ jobs:
           run: |
             mkdir assets
             rsync -avm \
-              --include='*.svg' --include="*.ttf" --include="*.otf" \
+              --include='*.svg' --include="*.ttf" --include="*.otf" --include="*.palette.yaml" \
               --exclude=".previews" -f 'hide,! */' . assets/
+      - uses: "./.github/actions/palette"
+        with:
+          run: |
+            python3 /generate.py assets/colors/chaosdorf.palette.yaml
       - uses: "./.github/actions/inkscape"
         with:
           run: |
