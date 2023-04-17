@@ -20,7 +20,7 @@ jobs:
       - uses: "./.github/actions/palette"
         with:
           run: |
-            python3 /generate.py assets/colors/chaosdorf.palette.yaml
+            python3 /generate.py .ase,.aco,.gpl,.kpl assets/colors/chaosdorf.palette.yaml
       - uses: "./.github/actions/inkscape"
         with:
           run: |
