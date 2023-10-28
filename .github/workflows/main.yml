@@ -27,6 +27,7 @@ jobs:
             find assets/logos -name *.svg -exec inkscape --export-type=pdf --export-area-page {} \;
             find assets/logos -name *.svg -exec inkscape --export-type=eps --export-area-page {} \;
             find assets/logos -name *.svg -exec inkscape --export-type=png --export-area-page --export-width=1024 {} \;
+            find assets/video -name *.svg -exec inkscape --export-type=png --export-area-page --export-width=1920 {} \;
       - uses: "./.github/actions/woff2"
         with:
           run: |
