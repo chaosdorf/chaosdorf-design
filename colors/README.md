@@ -15,7 +15,7 @@
 <img alt="Preview" src=".previews/green-pure.svg" width="24" height="24">
 
 **Web:** `#00FF00`  
-**RGB:** `0 255 0`
+**RGB:** `0 255 0`  
 **CMYK:** `72% 0% 100% 0%`
 
 ## Muted Hacker Green
@@ -37,7 +37,7 @@
 <img alt="Preview" src=".previews/black-pure.svg" width="24" height="24">
 
 **Web:** `#000000`  
-**RGB:** `0 0 0`
+**RGB:** `0 0 0`  
 **CMYK:** `0% 0% 0% 100%`
 
 ## Muted Black
