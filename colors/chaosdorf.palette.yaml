@@ -11,11 +11,14 @@ groups:
 swatches:
   - name: "Pure Hacker Green"
     rgb: [ 0, 255, 0 ]
+    cmyk: [ 72, 0, 100, 0 ]
   - name: "Muted Hacker Green"
     rgb: [ 0, 195, 0 ]
   - name: "White"
     rgb: [ 255, 255, 255 ]
+    cmyk: [ 0, 0, 0, 0 ]
   - name: "Pure Black"
     rgb: [ 0, 0, 0 ]
+    cmyk: [ 0, 0, 0, 100 ]
   - name: "Muted Black"
     rgb: [ 23, 23, 23 ]
